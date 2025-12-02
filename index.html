@@ -1,0 +1,258 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- ini font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="scroll-indicator"></div>
+
+    <nav class="navbar">
+      <div class="logo-group">
+        <div class="logo"><a href="#">ATHAYA</a></div>
+        <div class="logo2"><a href="#">PORTOFOLIO</a></div>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <i data-feather="menu"></i>
+      </div>
+
+      <div class="navbar-item" id="navbar-menu">
+        <a href="#Home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+        <a href="#skills">My Skill</a>
+        <a href="#projects">My Project</a>
+      </div>
+    </nav>
+
+    <section id="home" class="home-section">
+      <h1 class="glow-text">Hi, I'm Athaya</h1>
+      <p class="job">SPECIALIS FRONT DEVELOPER</p>
+      <a
+        href="asset/kembaran.jpg"
+        download="CV_Athaya.txt"
+        class="btn-download"
+        >Download CV</a
+      >
+    </section>
+
+    <main class="info">
+      <section id="about" class="about-section">
+        <div class="about-content">
+          <h1 class="poppins-regular">
+            Hai! My name is Azriel Athaya Azhar<br />I am Student of SMK Taruna
+            Bhakti. And I'm very handsome, charisma, cool, and I'm a fan of
+            MADRID
+          </h1>
+        </div>
+        <div class="img-background">
+          <img src="asset/kembaran.jpg" alt="Profile Picture" />
+        </div>
+      </section>
+    </main>
+
+    <section id="skills" class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png"
+            alt="HTML Logo"
+          />
+          <h3>HTML</h3>
+          <p>Mampu membuat struktur halaman web dengan rapi dan semantik.</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png"
+            alt="CSS Logo"
+          />
+          <h3>CSS</h3>
+          <p>Menata tampilan website agar menarik dan responsif.</p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+            alt="JavaScript Logo"
+          />
+          <h3>JavaScript</h3>
+          <p>Membuat halaman menjadi interaktif dan dinamis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>My Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img
+            src="asset/Screenshot 2025-10-06 103624.png"
+            alt="Character Asset"
+          />
+          <h3>KARAKTER</h3>
+          <p>Mampu membuat aset karakter dengan baik</p>
+        </div>
+        <div class="project-card">
+          <img src="asset/Screenshot 2025-11-13 075529.png" alt="SERTIFIKAT" />
+          <h3>SERTIFIKAT DICODING</h3>
+          <p>Menyelesaikan dicoding</p>
+        </div>
+        <div class="project-card">
+          <img src="asset/Screenshot 2025-11-06 145922.png" alt="Dior Logo" />
+          <h3>LOGO DIOR</h3>
+          <p>Membuat Logo brand dengan baik</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <header class="contact-header">
+          <h2>Contact me</h2>
+          <p>
+            Tertarik bekerja sama? Isi form ini atau kirim email ke
+            <a href="mailto:azrielathayaa@gmail.com" class="contact-link"
+              >azrielathayaa@gmail.com</a
+            >
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/mldaewye"
+            method="POST"
+            aria-label="Contact form"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message from portfolio"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <label for="name">Nama Lengkap</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nama lengkap"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@contoh.com"
+              required
+            />
+
+            <label for="message">Pesan</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Tulis pesan Anda di sini..."
+              required
+            ></textarea>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-submit" aria-label="Kirim pesan">
+                Kirim Pesan
+              </button>
+              <div class="contact-other">
+                Atau hubungi via <a href="#" class="contact-link">LinkedIn</a> /
+                <a href="#" class="contact-link">Twitter</a>
+              </div>
+            </div>
+          </form>
+
+          
+              </div>
+            </div>
+    </section>
+
+    <!-- TEST
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("service_n3v9ass") //GANTI PAKE PUNYA SENDIRI
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(function() {
+                    alert('Pesan berhasil dikirim!');
+                }, function(error) {
+                    alert('Gagal mengirim pesan. Silakan coba lagi.');
+                });
+        }
+        );
+    </script>
+    -->
+
+    <script>
+      feather.replace();
+    </script>
+    <script>
+      // Hamburger menu toggle
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function () {
+          document.getElementById("navbar-menu").classList.toggle("active");
+        });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        const scrolled =
+          (window.pageYOffset /
+            (document.body.scrollHeight - window.innerHeight)) *
+          100;
+
+        // Update scroll indicator
+        document.querySelector(".scroll-indicator").style.width =
+          scrolled + "%";
+
+        // Navbar background change
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+          // Close mobile menu after clicking
+          document.getElementById("navbar-menu").classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
